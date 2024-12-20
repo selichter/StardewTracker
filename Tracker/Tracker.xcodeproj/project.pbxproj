@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8D90D0A02D15C2E000F60B50 /* TrackerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8D90D09F2D15C2E000F60B50 /* TrackerKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8D90D0602D15BF1F00F60B50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		8D90D04E2D15BF1D00F60B50 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90D05F2D15BF1F00F60B50 /* TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D90D0692D15BF1F00F60B50 /* TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D90D09D2D15C25200F60B50 /* TrackerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TrackerKit; path = ../Packages/TrackerKit; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D90D0A02D15C2E000F60B50 /* TrackerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +81,11 @@
 		8D90D0452D15BF1D00F60B50 = {
 			isa = PBXGroup;
 			children = (
+				8D90D09D2D15C25200F60B50 /* TrackerKit */,
 				8D90D0502D15BF1D00F60B50 /* Tracker */,
 				8D90D0622D15BF1F00F60B50 /* TrackerTests */,
 				8D90D06C2D15BF1F00F60B50 /* TrackerUITests */,
+				8D90D09E2D15C2E000F60B50 /* Frameworks */,
 				8D90D04F2D15BF1D00F60B50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				8D90D0692D15BF1F00F60B50 /* TrackerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8D90D09E2D15C2E000F60B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,7 @@
 			);
 			name = Tracker;
 			packageProductDependencies = (
+				8D90D09F2D15C2E000F60B50 /* TrackerKit */,
 			);
 			productName = Tracker;
 			productReference = 8D90D04E2D15BF1D00F60B50 /* Tracker.app */;
@@ -549,6 +565,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D90D09F2D15C2E000F60B50 /* TrackerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TrackerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D90D0462D15BF1D00F60B50 /* Project object */;
 }
